@@ -5,9 +5,6 @@ jobs:
     docker:
       - image: circleci/python:3.7
       - image: circleci/mysql:8.0.4
-        auth:
-          username: shiva1998r
-          password: KR$DOC@25  # context / project UI env-var reference
         environment:
           MYSQL_ROOT_PASSWORD: rootpw
           MYSQL_DATABASE: test_db
